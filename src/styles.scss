@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900');
 
+$blue: #6CA4FF;
+$dark-blue: #5885FF;
 
 * {
   margin: 0;
@@ -29,7 +31,7 @@ body {
 }
 
 .blue {
-  color: #6CA4FF;
+  color: $blue;
 }
 
 h1 {
@@ -59,10 +61,10 @@ p {
   height: 100vh;
   position: relative;
 
-  .landingWrapper {
+  .landing-wrapper {
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
+    margin-top: 60px;
   }
 
   ul {
@@ -71,7 +73,7 @@ p {
     line-height: 30px;
   }
 
-  .landingL, .landingR {
+  .landing-left, .landing-right {
     margin-top: 4em;
   }
 
@@ -82,6 +84,13 @@ p {
     right: 0;
     margin: auto;
     height: 10px;
+    cursor: pointer;
+  }
+
+  .scroll:hover {
+    > .cls-1 {
+      stroke: $blue;
+    }
   }
 }
 
@@ -110,6 +119,36 @@ p {
   }
 }
 
+.cta-wrapper {
+  display: flex;
+  height: 200px;
+  justify-content: space-around;
+  align-items: center;
+
+  .cta {
+    background-color: $dark-blue;
+    width: 210px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+
+    .chat-icon {
+      height: 30px;
+
+      > .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 3px;
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 600px)  {
 
   body {
@@ -122,7 +161,7 @@ p {
     height: 100vh;
     position: relative;
 
-    .landingWrapper {
+    .landing-wrapper {
       justify-content: space-around;
     }
 
@@ -132,7 +171,7 @@ p {
       line-height: 30px;
     }
 
-    .landingR {
+    .landing-right {
       display: none;
     }
   }
