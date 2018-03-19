@@ -43,48 +43,50 @@
     </div>
   </div>
 
-  <a href="#tech-stack">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="931.18 1009.808 57.639 29.527" class="scroll">
-      <defs>
-        <style>
-          .cls-1 {
-            fill: none;
-            stroke: #707070;
-            stroke-width: 2;
-          }
-        </style>
-      </defs>
-      <path id="Path_1" data-name="Path 1" class="cls-1" d="M829.108,953.161l28.466,28.466,28.466-28.466" transform="translate(102.426 57)"/>
-    </svg>
-  </a>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="931.18 1009.808 57.639 29.527" class="scroll" [ngx-scroll-to]="'#tech-stack'">
+    <defs>
+      <style>
+        .cls-1 {
+          fill: none;
+          stroke: #707070;
+          stroke-width: 4;
+        }
+      </style>
+    </defs>
+    <path id="Path_1" data-name="Path 1" class="cls-1" d="M829.108,953.161l28.466,28.466,28.466-28.466" transform="translate(102.426 57)"/>
+  </svg>
 </div>
 
 <div class="tech-stack" id="tech-stack">
   <h2>Tech Stack.</h2>
-  <h5 class="blue department">Front End</h5>
-  <div class="skill-group">
-    <ul>
-      <li>HTML5</li>
-      <li>CSS</li>
-      <li>SASS</li>
-    </ul>
-    <ul>
-      <li>Angular 5</li>
-      <li>Node.Js</li>
-    </ul>
+  <div class="frontend">
+    <h5 class="blue department">Front End</h5>
+    <div class="skill-group">
+      <ul>
+        <li>HTML5</li>
+        <li>CSS</li>
+        <li>SASS</li>
+      </ul>
+      <ul>
+        <li>Angular 5</li>
+        <li>Node.Js</li>
+      </ul>
+    </div>
   </div>
 
-  <h5 class="blue department">Back End</h5>
-  <div class="skill-group">
-    <ul>
-      <li>Elixir</li>
-      <li>Ruby</li>
-      <li>PHP</li>
-    </ul>
-    <ul>
-      <li>Phoenix</li>
-      <li>Rails</li>
-    </ul>
+  <div class="backend">
+    <h5 class="blue department">Back End</h5>
+    <div class="skill-group">
+      <ul>
+        <li>Elixir</li>
+        <li>Ruby</li>
+        <li>PHP</li>
+      </ul>
+      <ul>
+        <li>Phoenix</li>
+        <li>Rails</li>
+      </ul>
+    </div>
   </div>
 </div>
 

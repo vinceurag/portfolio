@@ -90,6 +90,7 @@ p {
   .scroll:hover {
     > .cls-1 {
       stroke: $blue;
+      transition: all 0.2s ease-in-out;
     }
   }
 }
@@ -98,6 +99,10 @@ p {
 .tech-stack {
   text-align: center;
   margin-bottom: 20em;
+
+  .backend {
+    margin-top: 50px;
+  }
 
   .department {
     margin-top: 20px;
