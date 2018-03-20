@@ -3,6 +3,8 @@
 
 $blue: #6CA4FF;
 $dark-blue: #5885FF;
+$gray: #A2A2A2;
+$super-dark-blue: #0D1B43;
 
 * {
   margin: 0;
@@ -41,7 +43,7 @@ body {
 h1 {
   font-size: 40px;
   font-weight: 400;
-  color: #0D1B43;
+  color: $super-dark-blue;
 }
 
 h2 {
@@ -57,7 +59,7 @@ h5 {
 }
 
 p {
-  color: #A2A2A2;
+  color: $gray;
 }
 
 // landing
@@ -127,7 +129,7 @@ p {
     margin-top: 30px;
 
     li {
-      color: #A2A2A2;
+      color: $super-dark-blue;
       display: inline-block;
       text-transform: uppercase;
       margin: 0 15px;
