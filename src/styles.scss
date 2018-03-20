@@ -26,6 +26,10 @@ html {
 }
 
 body {
+  background-image: url('assets/bg@2x.png');
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 60%;
   margin: auto;
 }
@@ -99,13 +103,20 @@ p {
 .tech-stack {
   text-align: center;
   margin-bottom: 20em;
+  height: 100vh;
+  padding-top: 2em;
 
   .backend {
     margin-top: 50px;
   }
 
   .department {
-    margin-top: 20px;
+    margin-top: 2em;
+  }
+
+  .stacks-wrapper {
+    display: grid;
+    grid-template-rows: auto;
   }
 
   p {
@@ -195,18 +206,6 @@ p {
 
     .landing-right {
       display: none;
-    }
-  }
-
-  .tech-stack {
-    .skill-group {
-      ul:first-of-type {
-        margin-top: 15px;;
-      }
-
-      ul {
-        margin-top: 0;
-      }
     }
   }
 }
