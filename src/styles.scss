@@ -111,6 +111,7 @@ p {
 
   .backend {
     margin-top: 50px;
+    margin-bottom: 100px;
   }
 
   .department {
@@ -159,7 +160,7 @@ p {
   align-items: center;
 
   .cta {
-    background-color: $logo-dark-blue;
+    background-color: $dark-blue;
     width: 210px;
     height: 65px;
     display: flex;
