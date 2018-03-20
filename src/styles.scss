@@ -5,6 +5,7 @@ $blue: #6CA4FF;
 $dark-blue: #5885FF;
 $gray: #A2A2A2;
 $super-dark-blue: #0D1B43;
+$logo-dark-blue: #3B5CB7;
 
 * {
   margin: 0;
@@ -70,7 +71,7 @@ p {
   .landing-wrapper {
     display: flex;
     justify-content: space-between;
-    margin-top: 60px;
+    margin-top: 10px;
   }
 
   ul {
@@ -85,7 +86,7 @@ p {
 
   .scroll {
     position: absolute;
-    bottom: 100px;
+    bottom: 90px;
     left: 0;
     right: 0;
     margin: auto;
@@ -114,6 +115,7 @@ p {
 
   .department {
     margin-top: 2em;
+    color: $logo-dark-blue;
   }
 
   .stacks-wrapper {
@@ -157,7 +159,7 @@ p {
   align-items: center;
 
   .cta {
-    background-color: $dark-blue;
+    background-color: $logo-dark-blue;
     width: 210px;
     height: 65px;
     display: flex;
